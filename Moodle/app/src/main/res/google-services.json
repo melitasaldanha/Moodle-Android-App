@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "752677570295",
+    "firebase_url": "https://moodle-9546f.firebaseio.com",
+    "project_id": "moodle-9546f",
+    "storage_bucket": "moodle-9546f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752677570295:android:9b27d534782723c8",
+        "android_client_info": {
+          "package_name": "com.moodle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752677570295-rjk00qrg7fscp8d4ua0cnfg0mk0fjt2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moodle",
+            "certificate_hash": "9c479d68834470cc942fecfa5278d80f0b7978c8"
+          }
+        },
+        {
+          "client_id": "752677570295-mfnv758fuct8nctnqqstr8ddmran1rn6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBatjkAdHgdZxUknVmDmr1kDDdDXBstvow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752677570295-mfnv758fuct8nctnqqstr8ddmran1rn6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

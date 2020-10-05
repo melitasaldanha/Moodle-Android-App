@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moodle.Staff_Home">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Moodle"/>
+
+        // Tab layout to show tabs
+        <android.support.design.widget.TabLayout
+            android:background="@color/theme_purple"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabIndicatorHeight="3dp"
+            app:tabTextColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:id="@+id/tbl_pages"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //ViewPager to show tab's fragments
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/docs_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="180dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/docs_text"
+                android:text="Document"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/docs_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                android:clickable="true"
+                app:srcCompat="@drawable/documents" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notices_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="130dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/notices_text"
+                android:text="Notices"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/notices_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                android:clickable="true"
+                app:srcCompat="@drawable/notices" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quiz_layout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/quiz_text"
+                android:text="Quiz"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="5dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/quiz_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="mini"
+                android:clickable="true"
+                app:srcCompat="@drawable/quiz" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@android:drawable/ic_input_add" />
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

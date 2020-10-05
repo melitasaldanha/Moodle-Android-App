@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentAnswerQuestion">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textSize="20dp"
+        android:scrollHorizontally="true"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_above="@+id/save_answer"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/question"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Write Solution Here.."
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:scrollHorizontally="true"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Button
+        android:id="@+id/save_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="462dp"/>
+
+</RelativeLayout>

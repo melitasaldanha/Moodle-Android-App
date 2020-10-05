@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/subjects"
+        android:checkableBehavior="single" >
+
+        <!--<item
+            android:id="@+id/subject1"
+            android:title="Subject 1" />
+        <item
+            android:id="@+id/subject2"
+            android:title="Subject 2" />
+        <item
+            android:id="@+id/subject3"
+            android:title="Subject 3" />
+        <item
+            android:id="@+id/subject4"
+            android:title="Subject 4" />-->
+    </group>
+
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:textSize="20dp"
+        android:scrollHorizontally="true"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/solution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_answer"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/question"
+        android:background="@color/light_grey"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:scrollHorizontally="true"
+        android:textSize="20dp"/>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/solution"
+        android:orientation="horizontal">-->
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/solution"
+        android:background="@color/white"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="0dp"
+        android:scrollHorizontally="true"
+        android:text="Marks obtained: "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/marks_obtained"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/solution"
+        android:layout_toEndOf="@+id/textview"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:scrollHorizontally="true"
+        android:textSize="20dp"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@+id/textview"
+        app:layout_constraintRight_toLeftOf="@+id/out_of_marks" />
+
+    <TextView
+        android:id="@+id/out_of_marks"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/solution"
+        android:layout_toEndOf="@+id/marks_obtained"
+        android:background="@color/white"
+        android:textSize="20dp" />
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadQuiz">
+
+    <EditText
+        android:id="@+id/quiz_title"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:hint="Enter Quiz Title"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/quiz_ques_list"
+        android:layout_width="match_parent"
+        android:layout_height="397dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_alignTop="@+id/upload_quiz"/>
+
+    <Button
+        android:id="@+id/upload_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:text="Upload Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_ques"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/quiz_title"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="top|right"
+        android:layout_marginBottom="0dp"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
